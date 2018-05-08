@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D783F5A8-84FF-4BFE-A660-C45C0D2F5E1E}</ProjectGuid>
+    <ProjectGuid>{4E3B3123-7308-4A30-A147-9A996FF7C5EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackJack.BLL</RootNamespace>
-    <AssemblyName>BlackJack.BLL</AssemblyName>
+    <RootNamespace>ModelViewLayer</RootNamespace>
+    <AssemblyName>ModelViewLayer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,24 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\CardsFromPlayersDTO.cs" />
-    <Compile Include="DTO\CardsDTO.cs" />
-    <Compile Include="DTO\DealerDTO.cs" />
-    <Compile Include="DTO\GameDTO.cs" />
-    <Compile Include="DTO\PlayerDTO.cs" />
-    <Compile Include="DTO\PlayersInGame.cs" />
-    <Compile Include="DTO\RoundDTO.cs" />
-    <Compile Include="DTO\WinnerDTO.cs" />
-    <Compile Include="Interfaces\IBidsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\BidsService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BlackJackDAL\BlackJack.DAL.csproj">
-      <Project>{1000e69d-708a-4e29-8337-8e3ba00dedeb}</Project>
-      <Name>BlackJack.DAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
