@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace BlackJackDAL.Entities
 {
-    class Dealer
+    class Round
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public int Rate { get; set; }
+        public int GameId { get; set; }
+
+        public Game Game { get; set; }
     }
 }

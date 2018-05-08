@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJackDAL.Entities
+namespace BlackJack.BLL.DTO
 {
-    class Dealer
+    class WinnerDTO
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public int Rate { get; set; }
+        public int PlayerId { get; set; }
+        public int WinningsAmount { get; set; }
     }
 }
